@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('component-styles/index.css');
+
+:root {
+    --primary-color: #111827;          /* For text, buttons, component backgrounds (avatar background), logo */
+    --secondary-color: #F3F4F6;
+    --secondary-container-color: #D1D5D8;      /* everywhere else you can think of */ /*and remaining will automatically be white*/
+    --hover-color:#9ca3af;
+    --general-font: 'Arvo', serif;
+    --stylish-font: 'Pacifico', cursive;
+    --rating-star-color: #FF9529;
+    --error-background-color: #ff4040;
+    --error-border-text-color: darkred;
+    --warning-background-color: #fff44f;
+    --warning-border-text-color: #ebeb00;
+    --info-background-color: skyblue;
+    --info-border-text-color: blue;
+    --success-background-color: lightgreen;
+    --success-border-text-color: darkgreen;
+    --gray-text-color: #808080;
+} 
+
+*{
+    color: var(--primary-color);
+}
+
+p{
+    word-spacing: 0.2rem;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+a:hover, button:hover{
+    background-color: var(--hover-color);
+    border-radius: 2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    font-family: var(--general-font);
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    row-gap: 10px;
+}
+
+.navigation{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 100vw;
+}
+
+.sidebar-and-description{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.nav-links > span, .logo{
+    padding: 0 2rem;
+}
+
+.logo{
+    font-family: var(--stylish-font);
+}
+
+.sidebar{
+    background-color: var(--secondary-color);
+    padding: 0 2rem;
+    line-height: 1.5rem;
+}
+
+/* .sidebar>ul>li>a, .sidebar>h2, .logo, .nav-links{
+    color: var(--primary-color);
+} */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    font-family: var(--stylish-font);
+    justify-self: flex-end;
+}
+
+.social-media-icon{
+    height: 3rem;
+    width: 3rem;
+}
+
+.get-started-page-content{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get-started-page-content> h1{
+    font-family: var(--stylish-font);
+    font-size: 7rem;
+    margin-bottom: 0;
+}
