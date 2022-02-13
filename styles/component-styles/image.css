@@ -25,5 +25,9 @@
     width: 50%;
     height: auto;
 }
-
+/* //added later */
+.image-full-page-responsive{
+    height: 100vh;
+    width: 100vh;
+}
 
